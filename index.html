@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Face Detection Test</title>
+	<link rel="stylesheet" href="webcam-test.css">
+	<link href="node_modules/material-components-web/dist/material-components-web.min.css" rel="stylesheet">
+	<script src="node_modules/material-components-web/dist/material-components-web.min.js"></script>	
+</head>
+
+<body>
+	<h1>Webcam autopoint test</h1>
+	<div class="loading hidden" id="loading">Loading...</div>
+
+	<button id="butStart">Start</button>
+	<button id="butStop" class="hidden">Stop</button>
+	<div id="liveView" class="videoView">
+		<video id="webcam" autoplay playsinline></video>
+	</div>
+
+    <script type="module" src="/webcam-test.js"></script>
+
+</body>
+
+</html>
