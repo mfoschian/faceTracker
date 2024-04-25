@@ -34,5 +34,10 @@ export class FaceDetector {
 		const detections = this.fd.detectForVideo(video, startTimeMs).detections;
 		return detections ?? [];
 	}
+
+	detectForImage( imageTag ) {
+		const detections = this.fd.detect(imageTag).detections;
+		return detections ?? [];
+	}
 }
 
